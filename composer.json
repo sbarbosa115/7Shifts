@@ -1,0 +1,20 @@
+{
+    "name": "sbarbosa115/7shifts",
+    "description": "7Shifts Code Test.",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "CodeTests\\Shifts\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Sergio Barbosa",
+            "email": "sbarbosa115@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require-dev": {
+        "phpunit/phpunit": "^9"
+    }
+}
