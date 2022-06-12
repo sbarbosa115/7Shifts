@@ -19,5 +19,8 @@
     },
     "require": {
         "php": "^8.0.0"
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit tests --debug"
     }
 }
