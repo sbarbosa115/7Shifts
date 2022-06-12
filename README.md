@@ -25,3 +25,9 @@ e.g
 ### Tests
 
 `docker run -it --rm --name 7shifts-test 7shifts vendor/bin/phpunit tests --debug`
+
+### Last online build
+
+The code was integrated with Github actions in case of needing only build, at this time the build process just run the test suite.
+
+To know more about the latest builds go to [https://github.com/v6xsqRPztZPZ5nqZ/7Shifts/actions]
