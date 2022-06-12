@@ -26,11 +26,11 @@ class CalculatorTest extends TestCase
     {
         return [
             [
-                'input' => "1\n,2,3",
+                'input' => '1\n,2,3',
                 'expected' => 6,
             ],
             [
-                'input' => "1,\n2,4",
+                'input' => '1,\n2,4',
                 'expected' => 7,
             ]
         ];
@@ -49,15 +49,15 @@ class CalculatorTest extends TestCase
     {
         return [
             [
-                'input' => "//;\n1;3;4",
+                'input' => '//;\n1;3;4',
                 'expected' => 8,
             ],
             [
-                'input' => "//$\n1$2$3",
+                'input' => '//$\n1$2$3',
                 'expected' => 6,
             ],
             [
-                'input' => "//@\n2@3@8",
+                'input' => '//@\n2@3@8',
                 'expected' => 13,
             ]
         ];
@@ -76,11 +76,11 @@ class CalculatorTest extends TestCase
     {
         return [
             [
-                'input' => "//;\n-1;3;4",
+                'input' => '//;\n-1;3;4',
                 'expected' => 0,
             ],
             [
-                'input' => "-1,3,4",
+                'input' => '-1,3,4',
                 'expected' => 0,
             ],
         ];
@@ -101,11 +101,11 @@ class CalculatorTest extends TestCase
     {
         return [
             [
-                'input' => "//;\n1001;3;4",
+                'input' => '//;\n1001;3;4',
                 'expected' => 7,
             ],
             [
-                'input' => "//;\n1000;3;4",
+                'input' => '//;\n1000;3;4',
                 'expected' => 1007,
             ],
         ];
@@ -124,11 +124,11 @@ class CalculatorTest extends TestCase
     {
         return [
             [
-                'input' => "//***\n1***2***3",
+                'input' => '//***\n1***2***3',
                 'expected' => 6,
             ],
             [
-                'input' => "//--------------\n1--------------2--------------3",
+                'input' => '//--------------\n1--------------2--------------3',
                 'expected' => 6,
             ],
         ];
@@ -147,7 +147,7 @@ class CalculatorTest extends TestCase
     {
         return [
             [
-                'input' => "//$,@\n1$2@3",
+                'input' => '//$,@\n1$2@3',
                 'expected' => 6,
             ],
         ];

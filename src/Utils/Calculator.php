@@ -11,7 +11,7 @@ class Calculator
 
     private function extractSeparatorAndCleanInput(string $input): array
     {
-        preg_match('/^\/\/(.*?)\\n/', $input, $matches);
+        preg_match('/^\/\/(.*?)\\\\n/', $input, $matches);
 
         if (count($matches)) {
             $inputClean = str_replace($matches[0], '', $input);
@@ -28,11 +28,11 @@ class Calculator
         ];
     }
 
-    public function validateNumbersAndAndSum(array $numbers): int
+    private function validateNumbersAndAndSum(array $numbers): int
     {
         $total = 0;
         foreach ($numbers as $number) {
-            $currentNumber = (int) $number;
+            $currentNumber = (int) str_replace('\n', '', $number);
 
             if ($currentNumber < 0) {
                 throw new InvalidArgumentException('Negative numbers are not allowed.');
